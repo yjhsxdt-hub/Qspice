@@ -1,7 +1,7 @@
 ÿØÿÛ«symbol VCO-Behavioral
   «type: X»
   «description: Machine generated symbol for VCO-BEHAVIORAL»
-  «library file: |.subckt VCO-Behavioral frq duty out Vdd Vss ctrl\n¥1 v1p v1n ¥6 Q sawtooth 0 ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT Vt=0.5 Vh=0.5 TTOL=ttol\nV1 v1p 0 1\nB1 sawtooth 0 V=idt(V(Q),0)*4*0.5*V(frq)\nV2 0 v1n 1\nB2 frq 0 V=limit((fmax-fmin)*V(ctrl-scale)+fmin,fmin,fmax)\n¥2 Vdd Vss ¥7 out sawtooth duty ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\nB3 ctrl-scale 0 V=(V(ctrl)-minV)/(maxV-minV)\n.ends VCO-Behavioral»
+  «library file: |.subckt VCO-Behavioral frq ctrl duty out Vdd Vss\nB2 frq 0 V=limit((fmax-fmin)*(V(ctrl)-minV)/(maxV-minV)+fmin,fmin,fmax)\nB1 sawtooth 0 V=idt(V(frq),0,v(sawtooth)>1)\n¥1 Vdd Vss out ¬Q duty sawtooth Vdd ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ HMITT TTOL=ttol\n.ends VCO-Behavioral»
   «shorted pins: false»
   «rect (-700,500) (700,-800) 0 0 0 0x1000000 0x1000000 -1 0 -1»
   «text (-93,760) 1 7 0 0x1000000 -1 -1 "X1"»
@@ -12,9 +12,9 @@
   «text (-289,-300) 1 7 0 0x0 -1 -1 "fmax=50k"»
   «text (-289,-450) 1 7 0 0x1000000 -1 -1 "ttol=1n"»
   «pin (700,-500) (-20,0) 1 11 0 0x0 -1 "frq"»
+  «pin (-700,200) (20,0) 1 7 0 0x0 -1 "ctrl"»
   «pin (-700,-500) (20,0) 1 7 0 0x0 -1 "duty"»
   «pin (700,200) (-10,0) 1 11 0 0x0 -1 "out"»
   «pin (-300,500) (-20,0) 1 13 0 0x0 -1 "Vdd"»
   «pin (-300,-800) (-20,0) 1 14 0 0x0 -1 "Vss"»
-  «pin (-700,200) (20,0) 1 7 0 0x0 -1 "ctrl"»
 »
