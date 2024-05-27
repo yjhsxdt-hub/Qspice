@@ -4,14 +4,14 @@ QSpice Download: [https://www.qorvo.com/design-hub/design-tools/interactive/qspi
 
 QSpice Forum : [https://forum.qorvo.com/c/qspice/](https://forum.qorvo.com/c/qspice/)
 
-## Forum
-files support forum disucssion, directory name is discussion post ID
-
 ## Guideline
-quick start tutorial, indepth study of usage and device model guideline
+This section provides a quick start tutorial and in-depth study of usage and device model guidelines for Qspice
 
 ## Matlab2Qspice
-Use Matlab to create netlist and output data files for Qspice, simulate and plot results
+Use Matlab to create netlists and output data files for Qspice, as well as simulate and plot the results
+
+## Supplementary
+Additional materials related to spice simulation in this section
 
 ## Symbols
-KSKelvin symbols .qsym for Qspice
+Download KSKelvin symbols (.qsym) for Qspice
