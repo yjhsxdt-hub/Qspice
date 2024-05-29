@@ -15,3 +15,10 @@ Additional materials related to spice simulation in this section
 
 ## Symbols
 Download KSKelvin symbols (.qsym) for Qspice
+
+## Other Recommended Sites
+[QSpice Forum @RDunn's Github repo](https://github.com/robdunn4/QSpice)
+[QSpice Forum @physicboy's Github repo](https://github.com/physicboy/QSPICE)
+[Qspice Forum @masashi.nogawa's Github repo](https://github.com/Qorvo/PyQSPICE) - PyQspice
+[QSpice Forum @Mgyger's GitLab repo](https://gitlab.com/mgyger/qspice-symbols/) - Symbols
+
