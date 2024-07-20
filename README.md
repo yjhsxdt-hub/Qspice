@@ -25,3 +25,4 @@ Download KSKelvin symbols (.qsym) for Qspice
 
 [QSpice Forum @Mgyger's GitLab repo](https://gitlab.com/mgyger/qspice-symbols/) - Symbols
 
+[QSpice Forum @MarcosAlonso's GitLab repo](https://github.com/marcosalonsoelectronics/website)
