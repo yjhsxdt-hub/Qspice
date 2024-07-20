@@ -1,0 +1,15 @@
+ÿØÿÛ«symbol Diode-Behavioral
+  «type: X»
+  «description: Diode-Behavioral»
+  «library file: |.subckt Diode-Behavioral K A\nD1 K A Dmdl\n.model Dmdl D Vfwd=Vfwd Vrev=Vrev Ron=Ron Roff=Roff\n.ends Diode-Behavioral»
+  «shorted pins: false»
+  «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+  «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+  «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+  «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
+  «text (150,103) 1 7 0 0x1000000 -1 -1 "X1"»
+  «text (134,-60) 1 7 2 0x1000000 -1 -1 "DIODE-BEHAVIORAL"»
+  «text (129,-200) 1 7 0 0x0 -1 -1 "Vfwd=0 Vrev=5 Ron=1m Roff=10e6"»
+  «pin (0,-200) (0,0) 1 15 0 0x0 -1 "A"»
+  «pin (0,200) (0,0) 1 15 0 0x0 -1 "K"»
+»

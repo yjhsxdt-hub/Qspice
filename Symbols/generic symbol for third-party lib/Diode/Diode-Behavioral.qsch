@@ -1,0 +1,22 @@
+ÿØÿÛ«schematic
+  «component (-300,200) 0 0
+    «symbol D
+      «type: D»
+      «description: Silicon Diode»
+      «library file: Diode.txt»
+      «shorted pins: false»
+      «line (100,80) (-100,80) 0 0 0x1000000 -1 -1»
+      «line (0,200) (0,80) 0 0 0x1000000 -1 -1»
+      «line (0,-200) (0,-70) 0 0 0x1000000 -1 -1»
+      «triangle (0,80) (100,-70) (-100,-70) 0 0 0x1000000 0x2000000 -1 -1»
+      «text (100,200) 1 7 0 0x1000000 -1 -1 "D1"»
+      «text (100,-200) 1 7 0 0x1000000 -1 -1 "Dmdl"»
+      «pin (0,-200) (0,0) 1 0 0 0x0 -1 "A"»
+      «pin (0,200) (0,0) 1 0 0 0x0 -1 "K"»
+    »
+  »
+  «net (-300,0) 1 13 1 "A"»
+  «net (-300,400) 1 14 1 "K"»
+  «text (-400,-600) 1 7 0 0x1000000 -1 -1 "ï»¿.model Dmdl D Vfwd=Vfwd Vrev=Vrev\n+Ron=Ron Roff=Roff"»
+»
+
