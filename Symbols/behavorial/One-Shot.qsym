@@ -1,0 +1,16 @@
+ÿØÿÛ«symbol One-Shot
+  «type: X»
+  «description: One-Shot»
+  «library file: |.subckt one-shot in Vdd Q Vss\n¥1 Vdd Vss Q ¥4 in R ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ ¥ SR-FLOP\nB1 R 0 V=delay(V(in),tau)\n.ends one-shot»
+  «shorted pins: false»
+  «line (-400,50) (-350,0) 0 0 0x1000000 -1 -1»
+  «line (-350,0) (-400,-50) 0 0 0x1000000 -1 -1»
+  «rect (-400,300) (400,-300) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+  «text (-350,413) 1 7 0 0x1000000 -1 -1 "X1"»
+  «text (-2,200) 1 15 0 0x1000000 -1 -1 "ONE-SHOT"»
+  «text (-355,-200) 1 7 0 0x0 -1 -1 "tau=.1m"»
+  «pin (-400,0) (70,0) 1 7 0 0x0 -1 "in"»
+  «pin (0,300) (20,0) 1 15 0 0x0 -1 "Vdd"»
+  «pin (400,0) (-20,0) 1 11 0 0x0 -1 "Q"»
+  «pin (0,-300) (-20,0) 1 15 0 0x0 -1 "Vss"»
+»
