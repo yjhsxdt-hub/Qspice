@@ -1,5 +1,6 @@
-ÿØÿÛ«symbol D-subckt
+ÿØÿÛ«symbol Diode-4pins-TcTj-subckt
   «type: X»
+  «description: Diode with Tc Tj»
   «shorted pins: false»
   «rect (-100,200) (100,-200) 0 0 0 0x1000000 0x1000000 -1 0 -1»
   «text (173,-200) 1 7 0 0x0 -1 -1 "X1"»
