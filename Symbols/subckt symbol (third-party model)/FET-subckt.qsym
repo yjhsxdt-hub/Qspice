@@ -1,5 +1,6 @@
-ÿØÿÛ«symbol FETsubckt
+ÿØÿÛ«symbol FET-subckt
   «type: X»
+  «description: FET»
   «shorted pins: false»
   «rect (0,200) (400,-200) 0 0 0 0x1000000 0x1000000 -1 0 -1»
   «text (437,0) 1 7 0 0x0 -1 -1 "X1"»
