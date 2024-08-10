@@ -1,4 +1,4 @@
-ÿØÿÛ«symbol VCCS_Ilimit2
+ÿØÿÛ«symbol VCCS-Ilimit2
   «type: X»
   «description: VCCS with Ilimit»
   «library file: |.subckt VCCS-Ilimit v+ v- out+ out-\nB1 out- out+ I=limit(gm*(V(v+)-V(v-)),Imax,Imin)\n.ends VCCS-Ilimit»
@@ -18,9 +18,9 @@
   «ellipse (150,-50) (350,-250) 0 0 0 0x1000000 0x1000000 -1 -1»
   «text (-100,512) 1 7 0 0x1000000 -1 -1 "X1"»
   «text (-95,350) 1 7 0 0x1000000 -1 -1 "VCCS-Ilimit"»
-  «text (-78,-550) 1 7 0 0x0 -1 -1 "gm=1"»
-  «text (-78,-870) 1 7 0 0x0 -1 -1 "Imax=1"»
-  «text (-78,-720) 1 7 0 0x0 -1 -1 "Imin=-1"»
+  «text (-78,-550) 1 7 0 0x0 -1 -1 "gm=<1>"»
+  «text (-78,-870) 1 7 0 0x0 -1 -1 "Imax=<1>"»
+  «text (-78,-720) 1 7 0 0x0 -1 -1 "Imin=<-1>"»
   «pin (-100,100) (0,0) 1 15 0 0x0 -1 "v+"»
   «pin (-100,-300) (20,0) 1 15 0 0x0 -1 "v-"»
   «pin (400,200) (0,0) 1 15 0 0x0 -1 "out+"»

@@ -1,4 +1,4 @@
-ÿØÿÛ«symbol N-MOSFET-subckt
+ÿØÿÛ«symbol NMOS-BodyDiode-subckt
   «type: X»
   «description: N-Channel MOSFET (.subckt D G S)»
   «shorted pins: false»

@@ -1,6 +1,6 @@
-ÿØÿÛ«symbol NMOS-Generic
+ÿØÿÛ«symbol NMOS-subckt
   «type: X»
-  «description: N-Channel MOSFET (.subckt D G S)»
+  «description: MOSFET (.subckt D G S)»
   «shorted pins: false»
   «line (100,200) (100,150) 0 0 0x1000000 -1 -1»
   «line (100,-200) (100,0) 0 0 0x1000000 -1 -1»

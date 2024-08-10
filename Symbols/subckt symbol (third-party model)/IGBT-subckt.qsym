@@ -1,6 +1,6 @@
-ÿØÿÛ«symbol IGBT-Generic
+ÿØÿÛ«symbol IGBT-subckt
   «type: X»
-  «description: IGBT»
+  «description: IGBT (.subckt C G E)»
   «shorted pins: false»
   «line (0,150) (-100,50) 0 0 0x1000000 -1 -1»
   «line (-100,-50) (0,-150) 0 0 0x1000000 -1 -1»
