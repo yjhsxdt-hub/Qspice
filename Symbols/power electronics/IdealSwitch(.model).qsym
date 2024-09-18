@@ -1,7 +1,7 @@
 ÿØÿÛ«symbol IdealSwitch(.model)
   «type: S»
   «description: Ideal Switch with .model (embedded)»
-  «library file: .model SWId SW RON=1m ROFF=1Meg VT=0.5 VH=0»
+  «library file: |.model SWId SW RON=1m ROFF=1Meg VT=0.5 VH=0»
   «shorted pins: false»
   «line (-136,100) (-200,100) 0 0 0x1000000 -1 -1»
   «line (-136,100) (-121,89) 0 0 0x1000000 -1 -1»
