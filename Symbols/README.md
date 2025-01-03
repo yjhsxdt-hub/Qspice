@@ -1,4 +1,4 @@
-# .func and .meas
+# .func and .meas (Quick Reference)
 
 ## impedance with .ac
 .func Z() V(Z+,Z-)/I(Vsense)<br/>
