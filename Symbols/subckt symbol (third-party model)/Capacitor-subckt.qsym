@@ -1,4 +1,4 @@
-ÿØÿÛ«symbol
+ÿØÿÛ«symbol Capacitor-subckt
   «type: X»
   «description: Capacitor»
   «shorted pins: false»
@@ -8,6 +8,6 @@
   «rect (-130,30) (130,40) 0 0 0 0x1000000 0x3000000 -1 0 -1»
   «text (100,150) 1 7 0 0x1000000 -1 -1 "X1"»
   «text (100,-150) 1 7 0 0x1000000 -1 -1 "<model>"»
-  «pin (0,200) (0,0) 1 0 0 0x0 -1 "port1"»
-  «pin (0,-200) (0,0) 1 0 0 0x0 -1 "port2"»
+  «pin (0,200) (0,0) 1 0 0 0x0 -1 "1"»
+  «pin (0,-200) (0,0) 1 0 0 0x0 -1 "2"»
 »

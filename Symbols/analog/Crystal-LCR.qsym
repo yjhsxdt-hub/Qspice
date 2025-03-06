@@ -1,0 +1,19 @@
+ÿØÿÛ«symbol Crystal-LCR
+  «type: X»
+  «description: Crystal-LCR»
+  «library file: |.subckt Crystal-LCR Y1 Y2\nL1 Y1 N02 Ls Rpar=0\nC1 N02 N01 Cs Rpar=0\nR1 N01 Y2 Rs\nC2 Y1 Y2 Cp Rpar=0\n.ends crystal-LCR»
+  «shorted pins: false»
+  «line (-200,0) (-40,0) 0 0 0x1000000 -1 -1»
+  «line (40,0) (200,0) 0 0 0x1000000 -1 -1»
+  «line (-40,-100) (-40,100) 0 0 0x1000000 -1 -1»
+  «line (40,100) (40,-100) 0 0 0x1000000 -1 -1»
+  «rect (-20,-90) (20,90) 0 1 0 0x1000000 0x2000000 -1 0 -1»
+  «text (0,200) 1 0 0 0x0 -1 -1 "X1"»
+  «text (0,350) 1 0 2 0x1000000 -1 -1 "Crystal-LCR"»
+  «text (0,-200) 1 15 0 0x0 -1 -1 "Cs=<value>"»
+  «text (0,-350) 1 15 0 0x0 -1 -1 "Ls=<value>"»
+  «text (0,-500) 1 15 0 0x0 -1 -1 "Rs=<value>"»
+  «text (0,-650) 1 15 0 0x0 -1 -1 "Cp=<value>"»
+  «pin (-200,0) (0,0) 1 32 0 0x0 -1 "+"»
+  «pin (200,0) (0,0) 1 32 0 0x0 -1 "-"»
+»
