@@ -1,7 +1,7 @@
 ÿØÿÛ«symbol Delay
   «type: X»
   «description: Delay with Tline Idea»
-  «library file: |.subckt delay in out\nT1 N01 0 a 0 Td=Tdelay Z0=50\nR1 a 0 50\nB1 out 0 V=V(a)\nB2 N01 0 V=V(in)\n.ends delay»
+  «library file: |.subckt Delay-Tline in out\nT1 N01 0 a 0 Td=Tdelay Z0=50\nR1 a 0 50\nB1 out 0 V=V(a)\nB2 N01 0 V=V(in)\n.ends Delay-Tline»
   «shorted pins: false»
   «line (-200,50) (-150,0) 0 0 0x1000000 -1 -1»
   «line (-150,0) (-200,-50) 0 0 0x1000000 -1 -1»
@@ -11,7 +11,7 @@
   «arc3p (90,0) (-60,0) (20,0) 0 0 0x1000000 -1 -1»
   «arc3p (90,0) (240,0) (170,0) 0 0 0x1000000 -1 -1»
   «text (-190,301) 1 7 0 0x1000000 -1 -1 "X1"»
-  «text (31,300) 1 7 2 0x1000000 -1 -1 "DELAY"»
+  «text (31,300) 1 7 2 0x1000000 -1 -1 "DELAY-TLINE"»
   «text (-195,-280) 0.794 7 0 0x0 -1 -1 "Tdelay=<1m>"»
   «pin (-200,0) (0,0) 1 15 0 0x0 -1 "in"»
   «pin (300,0) (0,0) 1 15 0 0x0 -1 "out"»
