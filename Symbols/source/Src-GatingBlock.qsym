@@ -1,0 +1,21 @@
+ÿØÿÛ«symbol Src-GatingBlock
+  «type: X»
+  «description: Gating Block»
+  «library file: |.subckt Src-GatingBlock gate\nV1 gate 0 PULSE lo hi theta1/360/fsw+Td 1n 1n (theta2-theta1)/360/fsw 1/fsw\n.ends Src-GatingBlock»
+  «shorted pins: false»
+  «line (-350,-100) (-300,-100) 0 0 0x1000000 -1 -1»
+  «line (-300,-100) (-300,100) 0 0 0x1000000 -1 -1»
+  «line (-300,100) (-200,100) 0 0 0x1000000 -1 -1»
+  «line (-200,100) (-200,-100) 0 0 0x1000000 -1 -1»
+  «line (-200,-100) (-50,-100) 0 0 0x1000000 -1 -1»
+  «rect (-400,200) (300,-200) 0 0 0 0x1000000 0x1000000 -1 0 -1»
+  «text (-300,300) 1 0 0 0x1000000 -1 -1 "X1"»
+  «text (300,450) 1 0 2 0x1000000 -1 -1 "SRC-GATINGBLOCK"»
+  «text (-389,-300) 1 7 0 0x0 -1 -1 "theta1=<0>"»
+  «text (-389,-450) 1 7 0 0x0 -1 -1 "theta2=<90>"»
+  «text (-389,-600) 1 7 0 0x0 -1 -1 "fsw=<10k>"»
+  «text (-389,-750) 1 7 0 0x0 -1 -1 "Td=<0>"»
+  «text (-389,-900) 1 7 2 0x1000000 -1 -1 "hi=<1>"»
+  «text (-389,-1050) 1 7 2 0x1000000 -1 -1 "lo=<0>"»
+  «pin (300,0) (-20,20) 1 11 0 0x0 -1 "gate"»
+»
