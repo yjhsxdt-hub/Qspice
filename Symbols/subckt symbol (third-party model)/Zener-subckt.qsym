@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol Zener-subckt
   «type: X»
-  «description: Zener Diode»
+  «description: Zener»
   «shorted pins: false»
   «line (80,80) (-80,80) 0 0 0x1000000 -1 -1»
   «line (0,200) (0,80) 0 0 0x1000000 -1 -1»

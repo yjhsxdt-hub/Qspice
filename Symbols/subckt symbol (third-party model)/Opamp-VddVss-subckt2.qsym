@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol Opamp-VddVss-subckt2
   «type: X»
-  «description: Opamp - Generic Model»
+  «description: Opamp (.subckt IN+ IN- Vdd Vss OUT)»
   «shorted pins: false»
   «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
   «line (-150,200) (-50,200) 0 0 0x1000000 -1 -1»

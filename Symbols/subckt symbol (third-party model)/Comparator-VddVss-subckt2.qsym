@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol Comparator-VddVss-subckt2
   «type: X»
-  «description: Comparator - Generic Model»
+  «description: Comparator (.subckt IN+ IN- Vdd Vss OC)»
   «shorted pins: false»
   «line (-150,-200) (-50,-200) 0 0 0x1000000 -1 -1»
   «line (-150,200) (-50,200) 0 0 0x1000000 -1 -1»

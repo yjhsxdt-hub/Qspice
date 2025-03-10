@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol Capacitor-Variable-subckt
   «type: X»
-  «description: Capacitor - Variable»
+  «description: Capacitor-Variable»
   «shorted pins: false»
   «line (0,200) (0,40) 0 0 0x1000000 -1 -1»
   «line (0,-40) (0,-200) 0 0 0x1000000 -1 -1»
