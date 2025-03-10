@@ -1,4 +1,4 @@
-ÿØÿÛ«symbol Jumper
+ÿØÿÛ«symbol Jumper1
   «type: V»
   «description: Independent Voltage Source»
   «shorted pins: false»
@@ -8,7 +8,7 @@
   «ellipse (-20,140) (20,100) 0 0 0 0x1000000 0x1000000 -1 -1»
   «ellipse (-20,0) (20,-40) 0 0 0 0x1000000 0x1000000 -1 -1»
   «text (50,150) 1 7 2 0x1000000 -1 -1 "V1"»
-  «text (50,0) 1 7 2 0x1000000 -1 -1 "0"»
+  «text (50,-50) 1 7 2 0x1000000 -1 -1 "0"»
   «pin (0,200) (0,0) 1 0 0 0x0 -1 "+"»
   «pin (0,-100) (0,0) 1 0 0 0x0 -1 "-"»
 »
