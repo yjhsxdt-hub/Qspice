@@ -1,7 +1,7 @@
 ÿØÿÛ«symbol CCVS-1
   «type: X»
   «description: H-source (CCVS)»
-  «library file: |.subckt CCVS N+ N- NC+ NC-\nH1 N+ N- Vx Gain\nVx NC+ NC- 0\n.ends CCCS»
+  «library file: |.subckt CCVS N+ N- NC+ NC-\nH1 N+ N- Vx Gain\nVx NC+ NC- 0\n.ends CCVS»
   «shorted pins: false»
   «line (-200,200) (-200,-200) 0 0 0x1000000 -1 -1»
   «line (200,-130) (200,-200) 0 0 0x1000000 -1 -1»
