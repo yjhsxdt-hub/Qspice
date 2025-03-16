@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol MN-NMOS Enhancement-BodyDiode
   «type: MN»
-  «description: N-Channel MOSFET Transistor (Qspice Alternative)»
+  «description: N-Channel Enhancement MOSFET (Qspice Alternative)»
   «library file: NMOS.txt»
   «shorted pins: false»
   «line (100,200) (100,150) 0 0 0x1000000 -1 -1»

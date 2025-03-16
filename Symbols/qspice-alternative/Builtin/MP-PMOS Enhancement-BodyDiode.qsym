@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol MP-PMOS Enhancement-BodyDiode
   «type: MP»
-  «description: P-Channel MOSFET Transistor (Qspice Alternative)»
+  «description: P-Channel Enhancement MOSFET (Qspice Alternative)»
   «library file: PMOS.txt»
   «shorted pins: false»
   «line (100,0) (100,200) 0 0 0x1000000 -1 -1»
