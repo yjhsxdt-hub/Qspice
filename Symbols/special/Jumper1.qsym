@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol Jumper1
   «type: V»
-  «description: Independent Voltage Source»
+  «description: Jumper - 0V Voltage Source»
   «shorted pins: false»
   «line (0,-40) (0,-100) 0 0 0x1000000 -1 -1»
   «line (0,200) (0,140) 0 0 0x1000000 -1 -1»
