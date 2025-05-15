@@ -66,6 +66,7 @@ end
 if ~exist('cmdsep')     % before Matlab 2023b
     cmdsep = '&&';      % windows command separator
 end
+cmdsep = '&&';
 
 % system command : QUX -Netlist : Generate .cir from .qsch
 cmd_str = [

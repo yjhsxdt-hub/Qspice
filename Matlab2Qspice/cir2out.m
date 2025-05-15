@@ -36,6 +36,7 @@ end
 if ~exist('cmdsep')     % before Matlab 2023b
     cmdsep = '&&';      % windows command separator
 end
+cmdsep = '&&';
 
 % system command : QPOST : .out file for console output
 cmd_str = [

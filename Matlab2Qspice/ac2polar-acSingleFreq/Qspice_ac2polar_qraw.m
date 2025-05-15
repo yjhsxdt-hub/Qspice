@@ -1,3 +1,68 @@
+% QSPICE_AC2POLAR_QRAW Transform QSPICE AC simulation data from rectangular to polar form
+%   - Code is verified in MatLab 2024a (NOT support Octave)
+%
+% Description:
+%   Converts single-frequency AC simulation results from QSPICE from complex
+%   (real + imaginary) representation to polar (magnitude + phase) format.
+%
+% Requirements:
+%   - QSPICE simulation must use single-frequency AC analysis:
+%       .ac list <frequency>  (e.g., .ac list 1kHz)
+%
+% Workflow:
+%   1. Run AC simulation in QSPICE
+%   2. Run this MATLAB script and select the .qraw file
+%   4. View converted results in MATLAB Command Window
+%
+% Output Format:
+%   Displays three representations of the data:
+%   1. Rectangular form (real + j*imag)
+%   2. Polar form (magnitude ∠ phase)
+%   3. Polar form with dB magnitude (20*log10(mag) ∠ phase)
+%
+% Example:
+%   Typical output format:
+%       Frequency = 1000.00 Hz
+%       V(out)    =   70.71 ∠  -45.00°
+%       I(R1)     =    1.41 ∠   30.00°
+
+clc; close all; clear;
+
+% Load and parse QSPICE output file (.qraw)
+[filename, filepath] = uigetfile('*.qraw');
+qraw = qraw_parser([filepath filename]);
+
+fprintf('Load file "%s"\n', filename);
+
+% Display formatting parameters
+varWidth = 8;       % Width for variable names
+numWidth = 8;       % Width for numbers
+numPrec = 2;        % Decimal precision
+
+% Display in rectangular form (real + imaginary)
+fprintf('\nRectangular form (real + j*imag):\n');
+fprintf('Frequency = %.*f Hz\n', numPrec, qraw.data(1));
+arrayfun(@(n) fprintf('%-*s = %+*.*f + j*(%+*.*f)\n', ...
+       varWidth, qraw.expr{n}, ...
+       numWidth, numPrec, real(qraw.data(n)), ...
+       numWidth, numPrec, imag(qraw.data(n))), 2:numel(qraw.expr));
+
+% Display in polar form (magnitude and phase)
+fprintf('\nPolar form (magnitude ∠ phase):\n');
+fprintf('Frequency = %.*f Hz\n', numPrec, qraw.data(1));
+arrayfun(@(n) fprintf('%-*s = %*.*f ∠ %+*.*f°\n', ...
+       varWidth, qraw.expr{n}, ...
+       numWidth, numPrec, abs(qraw.data(n)), ...
+       numWidth, numPrec, rad2deg(angle(qraw.data(n)))), 2:numel(qraw.expr));
+
+% Display in polar form with dB magnitude
+fprintf('\nPolar form (dB magnitude ∠ phase):\n');
+fprintf('Frequency = %.*f Hz\n', numPrec, qraw.data(1));
+arrayfun(@(n) fprintf('%-*s = %*.*f ∠ %+*.*f°\n', ...
+       varWidth, qraw.expr{n}, ...
+       numWidth, numPrec, 20*log10(abs(qraw.data(n))), ... % Convert to dB
+       numWidth, numPrec, rad2deg(angle(qraw.data(n)))), 2:numel(qraw.expr));
+
 function [qraw]=qraw_parser(Qpathname)
 %QRAW_PARSER Parse QSPICE output data file (.qraw) in binary format
 %   [qraw] = qraw_parser(Qpathname) parses QSPICE output files
