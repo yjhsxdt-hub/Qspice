@@ -2,7 +2,7 @@
 Guideline for Qspice
 
 ## Documentation Files
-* Qspice - Entry User Guide.pdf &mdash; Beginner Quickstart Guideline
+* Qspice - Entry User Guide by KSKelvin.pdf &mdash; Beginner Quickstart Guideline
 * Qspice - General Reference Guide by KSKelvin.pdf &mdash; General Reference Guideline
 * Qspice - Command Reference Guide by KSKelvin.pdf &mdash; Study of Command
 * Qspice - Device Reference Guide by KSKelvin.pdf &mdash; Detail Study of Device Model
