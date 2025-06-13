@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol powermeter
   «type: X»
-  «description: Machine generated symbol for POWERMETER»
+  «description: RF Power Meter»
   «library file: |.subckt powermeter RFin RFout pfwdW prevW\nVIi RFin RFout 0\nB1 vfwd 0 V=(V(RFin)+Zo*I(VIi))/2\nB2 vrev 0 V=(V(RFin)-Zo*I(VIi))/2\nB3 vfwd_90 0 V=delay(V(vfwd),per/4,per/2)\nB4 vrev_90 0 V=delay(V(vrev),per/4,per/2)\nB5 vfwdSUM 0 V=(V(vfwd)**2+V(vfwd_90)**2)/2/Zo\nB6 vrevSUM 0 V=(V(vrev)**2+V(vrev_90)**2)/2/Zo\nR1 vfwdSUM pfwdW 50\nC1 pfwdW 0 1/2/pi/frq/50*filter\nR2 vrevSUM prevW 50\nC2 prevW 0 1/2/pi/frq/50*filter\n.param per=1/frq\n.param filter=10\n.ends powermeter»
   «shorted pins: false»
   «line (-400,0) (400,0) 6 0 0x1000000 -1 -1»

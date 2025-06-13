@@ -1,6 +1,6 @@
 ÿØÿÛ«symbol Contactor-3phase
   «type: X»
-  «description: Machine generated symbol for CONTACTOR-3PHASE»
+  «description: Contactor for 3-phase»
   «library file: |.subckt Contactor-3phase ctrl A1 A2 B1 B2 C1 C2\nS1 A1 A2 ctrl 0 SW1\nS2 B1 B2 ctrl 0 SW1\nS3 C1 C2 ctrl 0 SW1\n.model SW1 SW Ron=Ron Roff=Roff Vt=Vt Vh=Vh ttol=ttol\n.ends Contactor-3phase»
   «shorted pins: false»
   «line (-300,600) (-155,600) 0 0 0x1000000 -1 -1»
@@ -21,7 +21,7 @@
   «ellipse (-155,560) (-75,640) 0 0 0 0x1000000 0x1000000 -1 -1»
   «ellipse (75,-40) (155,40) 0 0 0 0x1000000 0x1000000 -1 -1»
   «ellipse (75,560) (155,640) 0 0 0 0x1000000 0x1000000 -1 -1»
-  «triangle (-100,-800) (0,-700) (100,-800) 0 0 0x1000000 0x2000000 -1 -1»
+  «triangle (-100,-800) (0,-700) (100,-800) 0 0 0x1000000 0xf5d29b -1 -1»
   «text (0,916) 1 15 0 0x1000000 -1 -1 "X1"»
   «text (0,1084) 1 15 2 0x1000000 -1 -1 "CONTACTOR-3PHASE"»
   «text (366,-750) 1 7 2 0x1000000 -1 -1 "Ron=1m"»
