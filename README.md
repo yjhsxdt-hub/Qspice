@@ -10,6 +10,9 @@ This section provides a quick start tutorial and in-depth study of usage and dev
 ## Matlab2Qspice
 Use Matlab to create netlists and output data files for Qspice, as well as simulate and plot the results
 
+## Projects
+My Qspice projects
+
 ## Supplementary
 Additional materials related to spice simulation in this section
 
