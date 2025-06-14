@@ -9,3 +9,5 @@
 ## Folders
 * examples - all examples (copy .dll into working directory to execute example in Qspice
 * FRA accessory - supporting symbol, e.g. Isolator, Differential Probe, Current Probe for FRA
+
+![alt text](https://github.com/KSKelvin-Github/Qspice/blob/main/Projects/FRA%20Frequency%20Response%20Analyzer/FRA%20(screen%20capture).png)
