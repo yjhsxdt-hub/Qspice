@@ -11,4 +11,8 @@
 * FRA accessory - supporting symbol, e.g. Isolator, Differential Probe, Current Probe for FRA
 
 ## Screen Capture
-![alt text](https://github.com/KSKelvin-Github/Qspice/blob/main/Projects/FRA%20Frequency%20Response%20Analyzer/FRA%20(screen%20capture).png)
+* example1.Buck-FRAnalyzerKSK.qsch
+![alt text](https://github.com/KSKelvin-Github/Qspice/blob/main/Projects/FRA%20Frequency%20Response%20Analyzer/screen%20capture/FRA%20(screen%20capture%232).png)
+
+* example5.QspiceDemo.BodePlot-FRAnalyzerKSK.qsch
+![alt text](https://github.com/KSKelvin-Github/Qspice/blob/main/Projects/FRA%20Frequency%20Response%20Analyzer/screen%20capture/FRA%20(screen%20capture%231).png)
