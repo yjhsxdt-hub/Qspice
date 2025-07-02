@@ -366,7 +366,7 @@ extern "C" __declspec(dllexport) void PostProcess(struct sFRANALYZERKSK *inst)
 {
    if(inst->plotbode){
       // command preparation
-      char *cmdBuf;
+      char cmdBuf[1024];   // update 2-JUL-25, @RDunn, char *cmdBuf pointer is allocated on the stack but not initialized, could point anywhere
       strcpy(cmdBuf,QUX);  // QUX is path to QUX.exe (e.g. C:\PROGRA~1\QSPICE\QUX.exe)
       strcat(cmdBuf," ");  // Space character
       strcat(cmdBuf,inst->fname);   // filename
