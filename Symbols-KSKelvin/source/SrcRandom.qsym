@@ -1,7 +1,7 @@
 ÿØÿÛ«symbol SrcRandom
   «type: X»
   «description: Source - Random»
-  «library file: |.subckt SrcRandom + -\nB1 + - V=abs(Vpp)*random(time*1e12)+offset-abs(Vpp)/2\n.ends SrcRandom»
+  «library file: |.subckt SrcRandom + -\nB1 + - V=abs(Vpp)*random(1e15*time/V(divider)+1e15*random())+offset-abs(Vpp)/2\nB7 divider 0 V=pow(10,floor(log10(time)))\n.ends SrcRandom»
   «shorted pins: false»
   «line (0,130) (0,200) 0 0 0x1000000 -1 -1»
   «line (0,-200) (0,-130) 0 0 0x1000000 -1 -1»
@@ -28,7 +28,7 @@
   «rect (-25,77) (25,73) 0 0 0 0x1000000 0x3000000 -1 0 -1»
   «rect (-2,50) (2,100) 0 0 0 0x1000000 0x3000000 -1 0 -1»
   «rect (-25,-73) (25,-77) 0 0 0 0x1000000 0x3000000 -1 0 -1»
-  «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0x1000000 -1 -1»
+  «ellipse (-130,130) (130,-130) 0 0 0 0x1000000 0xf5d29b -1 -1»
   «text (200,150) 1 7 0 0x1000000 -1 -1 "X1"»
   «text (200,0) 1 7 0 0x1000000 -1 -1 "SrcRandom"»
   «text (200,-150) 0.681 7 0 0x0 -1 -1 "Vpp=<2>"»
